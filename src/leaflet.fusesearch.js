@@ -286,7 +286,7 @@ L.Control.FuseSearch = L.Control.extend({
     createResultItem: function(props, container, popup) {
 
         var _this = this;
-        var feature = props._feature;
+        var feature = props.item._feature;
 
         // Create a container and open the associated popup on click
         var resultItem = L.DomUtil.create('p', 'result-item', container);
