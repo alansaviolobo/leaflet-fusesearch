@@ -258,7 +258,7 @@ L.Control.FuseSearch = L.Control.extend({
         var max = this.options.maxResultLength;
         for (var i in result) {
             var props = result[i];
-            var feature = props._feature;
+            var feature = props.item._feature;
             var popup = this._getFeaturePopupIfVisible(feature);
             
             if (undefined !== popup || this.options.showInvisibleFeatures) {
